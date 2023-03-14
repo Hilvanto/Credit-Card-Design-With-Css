@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*   background-color: #090221; */
+}
+.card{
+  position: relative;
+  width:300px;
+  height:180px;
+  border-radius: 15px;
+  background-image: linear-gradient(45deg,#042843,#726e9e);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:1rem;
+}
+.card::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background: url("map.png") center/cover;
+  opacity: .1;
+}
+p{
+  color:#fff;
+  font-family: 'Montserrat', sans-serif;
+}
+#type{
+  font-weight: bold;
+}
+#number{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+#vaild{
+  font-size:.6rem;
+  margin:.4rem 0;
+}
+.logo{
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  display: flex;
+}
+.logo span{
+  position: relative;
+  display:block;
+  width:40px;
+  height:40px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 1;
+}
+span:nth-child(1){
+  background-color: #EA001B;
+  transform: translateX(10px);
+  z-index: 2;
+}
+span:nth-child(2){
+  background-color:#F79E1C;
+  transform: translateX(-10px);
+}
